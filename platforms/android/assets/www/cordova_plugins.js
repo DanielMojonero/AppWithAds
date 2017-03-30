@@ -1,0 +1,73 @@
+cordova.define('cordova/plugin_list', function(require, exports, module) {
+module.exports = [
+    {
+        "id": "cordova-plugin-camera.Camera",
+        "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "Camera"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.CameraPopoverOptions",
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "CameraPopoverOptions"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.camera",
+        "file": "plugins/cordova-plugin-camera/www/Camera.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "navigator.camera"
+        ]
+    },
+    {
+        "id": "cordova-plugin-camera.CameraPopoverHandle",
+        "file": "plugins/cordova-plugin-camera/www/CameraPopoverHandle.js",
+        "pluginId": "cordova-plugin-camera",
+        "clobbers": [
+            "CameraPopoverHandle"
+        ]
+    },
+    {
+        "id": "cordova-connectivity-monitor.connectivity",
+        "file": "plugins/cordova-connectivity-monitor/www/connectivity.js",
+        "pluginId": "cordova-connectivity-monitor",
+        "clobbers": [
+            "window.connectivity"
+        ]
+    },
+    {
+        "id": "cordova-admob.AdMobAds",
+        "file": "plugins/cordova-admob/www/admob.js",
+        "pluginId": "cordova-admob",
+        "clobbers": [
+            "window.admob",
+            "window.tappx"
+        ]
+    },
+    {
+        "id": "cordova-plugin-admob.AdMob",
+        "file": "plugins/cordova-plugin-admob/www/AdMob.js",
+        "pluginId": "cordova-plugin-admob",
+        "clobbers": [
+            "window.plugins.AdMob"
+        ]
+    }
+];
+module.exports.metadata = 
+// TOP OF METADATA
+{
+    "cordova-plugin-compat": "1.1.0",
+    "cordova-plugin-camera": "2.4.0",
+    "cordova-plugin-whitelist": "1.3.2",
+    "cordova-connectivity-monitor": "1.2.2",
+    "cordova-admob": "4.1.16",
+    "cordova-admobsdk": "1.0.4",
+    "cordova-plugin-admob": "3.2.4"
+};
+// BOTTOM OF METADATA
+});
